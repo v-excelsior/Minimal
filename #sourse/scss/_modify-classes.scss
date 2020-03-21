@@ -1,0 +1,80 @@
+@import '_vars.scss';
+
+@mixin container($max-width,$min-height:none){
+    max-width: $max-width; 
+    min-height: $min-height;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.section-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        margin-bottom: 20px;
+        @media (max-width: 767px){
+            margin-bottom: 10px;
+        }
+    }
+    .line{
+        height: 3px;
+        width: 100px;
+        background-color: $color-gold;
+        &:after{
+            display: block;
+            content: '';
+            height: 3px;
+            width:70px;
+            background-color: $color-gold-dark;
+            margin: 10px auto;
+        }
+    }
+}
+
+
+.section-describer{
+    font-size:16px;
+    text-align: center;
+    line-height: 24px;
+    color: $color-grey;
+
+    @media (max-width: 767px){
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width:300px;
+    height: 40%;
+    max-height:300px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0; 
+    background-color: rgba(0,0,0,0.7);
+    p{
+        color: white;
+    }
+}
