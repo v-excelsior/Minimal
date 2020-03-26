@@ -1,0 +1,78 @@
+@import "vars.scss";
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 10px;
+  @media (max-width: 767px) {
+    padding: 50px 10px;
+  }
+}
+
+.section-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__header {
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+  .line {
+    height: 3px;
+    width: 100px;
+    background-color: $color-gold;
+    &:after {
+      display: block;
+      content: "";
+      height: 3px;
+      width: 70px;
+      background-color: $color-gold-dark;
+      margin: 10px auto;
+    }
+  }
+}
+
+.section-describer {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-style: italic;
+  color: $color-grey;
+  @media (max-width: 767px) {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@mixin underline-hover {
+  &:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #444444 50%, $color-gold 0, $color-gold 100%);
+    transform: scale(0);
+    transition: all ease 0.3s;
+  }
+  &:hover::after {
+    transform: scale(1);
+  }
+}
+
+.bold {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.legend {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.text {
+  text-align: justify;
+}

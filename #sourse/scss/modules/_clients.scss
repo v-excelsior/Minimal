@@ -1,0 +1,16 @@
+.clients {
+    background-color: black;
+    color: white;
+    &__section-name {
+      margin-bottom: 110px;
+    }
+    &__slide{
+      display: flex;
+      height: 30px;
+      align-items: center;
+    }
+    &__name {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }

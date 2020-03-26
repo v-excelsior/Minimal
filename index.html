@@ -1,181 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
-    <title>Document</title>
+    <title>Dmytro V.</title>
 </head>
+
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__body">
-                <a href="#home" class="logo"><span class="lato">SPIRIT8</span></a>
-                <div class="header__min-menu" id="header__min-menu" onclick="hideNav('header__min-menu','header__menu','active')">
-                    <span></span>
-                </div>
-                <nav class="header__menu" id="header__menu">
-                    <ul>
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li>
-                            <a href="#works">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#testimonials">Testimonials</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="header__container container">
+            <a href="#home" class="header__logo"><span>SPIRIT8</span></a>
+            <div class="header__menu-btn" id="header__menu-btn">
+                <span class="draw-btn-helper"></span>
             </div>
-        </div> 
+            <nav class="header__menu" id="header__menu">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#works">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
     <section class="welcome" id="home">
-        <div class="container">
-            <div>
-                <h1>
-                    Welcome on <span class="bold gold">SPIRIT8</span>
-                </h1>
-                <p>
-                    We are a digital agency with <span class="bold">years of experience</span> and with <span class="bold">extraordinary people</span>
-                </p>
-            </div>
-            <div class="img">
-                <a href="#about"><img src="img/icon/scroll-down.png"></a>
-            </div>
+        <div class="welcome_container container">
+            <h1>
+                Welcome on <span class="bold gold">SPIRIT8</span>
+            </h1>
+            <p>
+                We are a digital agency with <span class="bold">years of experience</span> and with <span
+                    class="bold">extraordinary people</span>
+            </p>
+            <a href="#about" class="scroll-btn"><img src="img/icon/scroll-down.png"></a>
         </div>
     </section>
 
     <section class="about-us" id="about">
-        <div class="container">
-            <div class="about-us__img">
-                <img src="img/item/mac.png">
+        <div class="about-us__container container">
+            <div class="about-us__img-container">
+                <img class="about-us__img" src="img/item/mac.png">
             </div>
             <div class="about-us__content">
-                <span class="legend">
-                    About us
-                </span>
-                <h2>
-                    Some words <b>about us</b>
-                </h2>
-                <p>
-                    We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.
+                <span class="about-us__legend legend">About us</span>
+                <h3 class="about-us__header">Some words <span class="bold">about us</span></h3>
+                <p class="about-us__text text">
+                    We love building and rebuilding brands through our specific skills. Using colour, fonts, and
+                    illustration, we brand companies in a way they will never forget.
                 </p>
-                <ul>
-                    <li><b>Mission - </b><i>We deliver uniqueness and quality</i></li>
-                    <li><b>Skills - </b><i>Delivering fast and excellent results</i></li>
-                    <li><b>Clients - </b><i>Satisfied clients thanks to our experience</i></li>
+                <ul class="about-us__list">
+                    <li class="about-us__list-item"><span class="bold">Mission - </span><span class="italic">We
+                            deliver uniqueness and quality</span></li>
+                    <li class="about-us__list-item"><span class="bold">Skills - </span><span class="italic">Delivering
+                            fast and excellent results</span></li>
+                    <li class="about-us__list-item"><span class="bold">Clients - </span><span class="italic">Satisfied
+                            clients thanks to our experience</span></li>
                 </ul>
-                <a href="#works">
-                    <img src="img/icon/link.png">Browse out work
+                <a class="about-us__btn" href="#works">
+                    <img class="btn__img" src="img/icon/link.png">Browse out work
                 </a>
             </div>
         </div>
     </section>
 
     <section class="our-team">
-        <div class="container">
-            <div class="section-name">
-                <h1>
+        <div class="our-team__container container">
+            <div class="our-team__section-name section-name">
+                <h2 class="section-name__header">
                     Meet <b>our team</b>
-                </h1>
+                </h2>
                 <div class="line"></div>
             </div>
-            <div class="slider slider-our-team">
-                <div class="slide">
-                    <img src="img/foto/foto-1.png" alt="foto1">
-                    <h5>Name</h5>
-                    <span>Job</span>
-                    <p>Some text about this people.Some text about this people.Some text about this people.</p>
+            <div class="our-team__slider slider">
+                <div class="our-team__slide slide">
+                    <img class="our-team__slide-foto" class="" src="img/foto/foto-1.png" alt="foto1">
+                    <h5 class="our-team__slide-name">Name</h5>
+                    <span class="our-team__slide-job">Job</span>
+                    <p class="our-team__slide-text">Some text about this people.Some text about this people.Some
+                        text about this people.</p>
                 </div>
-                <div class="slide">
-                    <img src="img/foto/foto-2.png" alt="foto1">
-                    <h5>Name</h5>
-                    <span>Job</span>
-                    <p>Some text about this people.Some text about this people.Some text about this people.</p>
+                <div class="our-team__slide slide">
+                    <img class="our-team__slide-foto" src="img/foto/foto-2.png" alt="foto1">
+                    <h5 class="our-team__slide-name">Name</h5>
+                    <span class="our-team__slide-job">Job</span>
+                    <p class="our-team__slide-text">Some text about this people.Some text about this people.Some
+                        text about this people.</p>
                 </div>
-                <div class="slide">
-                    <img src="img/foto/foto-3.png" alt="foto1">
-                    <h5>Name</h5>
-                    <span>Job</span>
-                    <p>Some text about this people.Some text about this people.Some text about this people.</p>
+                <div class="our-team__slide slide">
+                    <img class="our-team__slide-foto" src="img/foto/foto-3.png" alt="foto1">
+                    <h5 class="our-team__slide-name">Name</h5>
+                    <span class="our-team__slide-job">Job</span>
+                    <p class="our-team__slide-text">Some text about this people.Some text about this people.Some
+                        text about this people.</p>
                 </div>
-                <div class="slide">
-                    <img src="img/foto/foto-4.png" alt="foto1">
-                    <h5>Name</h5>
-                    <span>Job</span>
-                    <p>Some text about this people.Some text about this people.Some text about this people.</p>
+                <div class="our-team__slide slide">
+                    <img class="our-team__slide-foto" src="img/foto/foto-4.png" alt="foto1">
+                    <h5 class="our-team__slide-name">Name</h5>
+                    <span class="our-team__slide-job">Job</span>
+                    <p class="our-team__slide-text">Some text about this people.Some text about this people.Some
+                        text about this people.</p>
                 </div>
-                <div class="slide">
-                    <img src="img/foto/foto-5.png" alt="foto1">
-                    <h5>Name</h5>
-                    <span>Job</span>
-                    <p>Some text about this people.Some text about this people.Some text about this people.</p>
+                <div class="our-team__slide slide">
+                    <img class="our-team__slide-foto" src="img/foto/foto-5.png" alt="foto1">
+                    <h5 class="our-team__slide-name">Name</h5>
+                    <span class="our-team__slide-job">Job</span>
+                    <p class="our-team__slide-text">Some text about this people.Some text about this people.Some
+                        text about this people.</p>
                 </div>
-                <div class="slide">
-                    <img src="img/foto/foto-6.png" alt="foto1">
-                    <h5>Name</h5>
-                    <span>Job</span>
-                    <p>Some text about this people.Some text about this people.Some text about this people.</p>
+                <div class="our-team__slide slide">
+                    <img class="our-team__slide-foto" src="img/foto/foto-6.png" alt="foto1">
+                    <h5 class="our-team__slide-name">Name</h5>
+                    <span class="our-team__slide-job">Job</span>
+                    <p class="our-team__slide-text">Some text about this people.Some text about this people.Sometext
+                        about this people.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="services" id="services">
-        <div class="container">
-            <div class="section-name">
-                <h1>
-                    Take a look at <b>our services</b>
-                </h1>
+        <div class="services__container container">
+            <div class="services__section-name section-name">
+                <h2 class="section-name__header">
+                    Take a look at <span class="bold">our services</span>
+                </h2>
                 <div class="line"></div>
             </div>
-            <p class="section-describer"><i>
-                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </i></p>
-            <div class="item-container">
+            <p class="services__section-describer section-describer">
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
+                Extremes
+                of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                very
+                popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                comes
+                from a line in section 1.10.32.
+            </p>
+            <div class="services__item-container">
                 <div class="spacing-wrap">
                     <div class="services__item">
-                        <img src="img/icon/services-1.png" alt="services-1">
-                        <h4>Web design</h4>
-                        <p>
-                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                        <img class="services__item-icon" src="img/icon/services-1.png" alt="services-1">
+                        <h4 class="services__item-type">Web design</h4>
+                        <p class="services__item-text">
+                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+                            section
+                            1.10.32.
                         </p>
                     </div>
                     <div class="services__item">
-                        <img src="img/icon/services-2.png" alt="services-1">
-                        <h4>Mobile apps</h4>
-                        <p>
-                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                        <img class="services__item-icon" src="img/icon/services-2.png" alt="services-1">
+                        <h4 class="services__item-type">Mobile apps</h4>
+                        <p class="services__item-text">
+                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+                            section
+                            1.10.32.
                         </p>
                     </div>
                 </div>
                 <div class="spacing-wrap">
                     <div class="services__item">
-                        <img src="img/icon/services-3.png" alt="services-1">
-                        <h4>Photography</h4>
-                        <p>
-                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                        <img class="services__item-icon" src="img/icon/services-3.png" alt="services-1">
+                        <h4 class="services__item-type">Photography</h4>
+                        <p class="services__item-text">
+                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+                            section
+                            1.10.32.
                         </p>
                     </div>
                     <div class="services__item">
-                        <img src="img/icon/services-4.png" alt="services-1">
-                        <h4>Marketing</h4>
-                        <p>
-                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                        <img class="services__item-icon" src="img/icon/services-4.png" alt="services-1">
+                        <h4 class="services__item-type">Marketing</h4>
+                        <p class="services__item-text">
+                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+                            section
+                            1.10.32.
                         </p>
                     </div>
                 </div>
@@ -185,33 +202,33 @@
 
     <section class="clients">
         <div class="container">
-            <div class="section-name">
-                <h1>
-                    Some of <b>our clients</b>
-                </h1>
+            <div class="clients__section-name section-name">
+                <h2 class="section-name__header">
+                    Some of <span class="bold">our clients</span>
+                </h2>
                 <div class="line"></div>
             </div>
-            <div class="slider multiple-items slider-clients">
-                <div class="slide">
-                    <img src="img/logo/logo-1.png" alt="logo1">
+            <div class="clients__slider slider">
+                <div class="clients__slide slide">
+                    <img class="clients__name" src="img/logo/logo-1.png" alt="logo1">
                 </div>
-                <div class="slide">
-                    <img src="img/logo/logo-2.png" alt="logo2">
+                <div class="clients__slide slide">
+                    <img class="clients__name" src="img/logo/logo-2.png" alt="logo2">
                 </div>
-                <div class="slide">
-                    <img src="img/logo/logo-3.png" alt="logo3">
+                <div class="clients__slide slide">
+                    <img class="clients__name" src="img/logo/logo-3.png" alt="logo3">
                 </div>
-                <div class="slide">
-                    <img src="img/logo/logo-4.png" alt="logo4">
+                <div class="clients__slide slide">
+                    <img class="clients__name" src="img/logo/logo-4.png" alt="logo4">
                 </div>
-                <div class="slide">
-                    <img src="img/logo/logo-5.png" alt="logo5">
+                <div class="clients__slide slide">
+                    <img class="clients__name" src="img/logo/logo-5.png" alt="logo5">
                 </div>
-                <div class="slide">
-                    <img src="img/logo/logo-6.png" alt="logo6">
+                <div class="clients__slide slide">
+                    <img class="clients__name" src="img/logo/logo-6.png" alt="logo6">
                 </div>
-                <div class="slide">
-                    <img src="img/logo/logo-7.png" alt="logo7">
+                <div class="clients__slide slide">
+                    <img class="clients__name" src="img/logo/logo-7.png" alt="logo7">
                 </div>
             </div>
         </div>
@@ -219,142 +236,159 @@
 
     <section class="works" id="works">
         <div class="container">
-            <div class="section-name">
-                <h1>
-                    Some of <b>our works</b>
-                </h1>
+            <div class="works__section-name section-name">
+                <h2 class="section-name__header">
+                    Some of <span class="bold">our works</span>
+                </h2>
                 <div class="line"></div>
             </div>
-            <p class="section-describer"><i>
-                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </i></p>
-            <div class="works-container">
-                <div class="works__sort">
-                    <span class="sort-label">
-                        Filter by type
-                    </span>
-                    <ul class="sort-type">
-                        <li><button class="sort-btn active" onclick="filterSelection('all')">All</button></li>
-                        <li><button class="sort-btn" onclick="filterSelection('web')">Web Design</button></li>
-                        <li><button class="sort-btn" onclick="filterSelection('mobile')">Mobile design</button></li>
-                        <li><button class="sort-btn" onclick="filterSelection('photo')">Photography</button></li>
-                    </ul>
+            <p class="works__section-describer section-describer">
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
+                Extremes
+                of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+                very
+                popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                comes
+                from a line in section 1.10.32.
+            </p>
+            <div class="works__filter-wrap">
+                <span class="works__filter-label">
+                    Filter by type
+                </span>
+                <form class="works__filter">
+                    <form class="works__filter-list">
+                        <label class="works__filter-type active" for="all">All category</label>
+                        <input class="works__filter-radio" id="all" type="radio" id="all" name="filter-list" value="all"
+                            checked>
+                        <label class="works__filter-type" for="web">Web design</label>
+                        <input class="works__filter-radio" id="web" type="radio" name="filter-list" value="web">
+                        <label class="works__filter-type" for="mobile"> Mobile</label>
+                        <input class="works__filter-radio" id="mobile" type="radio" name="filter-list" value="mobile">
+                        <label class="works__filter-type" for="photo">Photo</label>
+                        <input class="works__filter-radio" id="photo" type="radio" name="filter-list" value="photo">
+                    </form>
+                </form>
+            </div>
+            <div class="works__items">
+                <div class="works__item item-1" data-categoty="photo">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Photo design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
+                    </div>
                 </div>
-                <div class="works__items">
-                    <div class="works-item item-1 photo">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Photo design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                <div class="works__item item-2" data-categoty="photo">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Photo design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-2 photo">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Photo design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-3" data-categoty="photo">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Photo design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-3 photo">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Photo design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-4" data-categoty="web">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Website design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-4 web">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Website design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-5" data-categoty="web">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Website design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-5 web">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Website design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-6" data-categoty="mobile">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Mobile design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-6 mobile">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Mobile design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-7" data-categoty="mobile">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <sspan class="works__item-category" pan>Mobile design</sspan>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-7 mobile">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Mobile design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-8" data-categoty="mobile">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Mobile design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-8 mobile">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Mobile design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-9" data-categoty="mobile">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Mobile design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-9 mobile">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Mobile design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-10" data-categoty="mobile">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Mobile design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-10 mobile">
-                        <div class="item-content">
-                            <h5>Trend and fashion</h5>
-                            <span>Mobile design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-11" data-categoty="mobile">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion</h5>
+                        <span class="works__item-category">Photo</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
-                    <div class="works-item item-11 mobile">
-                        <div class="item-content photo">
-                            <h5>Trend and fashion</h5>
-                            <span>Photo</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
-                    </div>
-                    <div class="works-item item-12 mobile">
-                        <div class="item-content web">
-                            <h5>Trend and fashion </h5>
-                            <span>Website design</span>
-                            <img class="work-btn" src="img/icon/plus.png">
-                        </div>
+                </div>
+                <div class="works__item item-12" data-categoty="mobile">
+                    <div class="works__item-content">
+                        <h5 class="works__item-name">Trend and fashion </h5>
+                        <span class="works__item-category">Website design</span>
+                        <img class="works__item-btn" src="img/icon/plus.png">
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
     </section>
 
     <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-name">
-                <h1>
-                    <b>our clients</b> testimonials
-                </h1>
+        <div class="container testimonials__container">
+            <div class="section-name testimonials__section-name">
+                <h2 class="section-name__header">
+                    <span class="bold">our clients</span> testimonials
+                </h2>
                 <div class="line"></div>
             </div>
-            <div class="slider slider-testimonials">
-                <div class="slide">
-                    <p>
-                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            <div class="slider testimonials__slider">
+                <div class="slide testimonials__slide">
+                    <p class="testimonials__slide-text">
+                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The
+                        first
+                        line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                     </p>
                     <span><b>Name</b>, Job</span>
                 </div>
-                <div class="slide">
+                <div class="slide testimonials__slide">
                     <p>
-                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The
+                        first
+                        line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
                     </p>
                     <span><b>Name</b>, Job</span>
                 </div>
-                <div class="slide">
+                <div class="slide testimonials__slide">
                     <p>
-                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                    </p> 
+                        This book is a treatise on the theory of ethics, very popular during the Renaissance. The
+                        first
+                        line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    </p>
                     <span><b>Name</b>, Job</span>
                 </div>
             </div>
@@ -362,69 +396,70 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-name">
-                <h1>
+        <div class="container contact__container">
+            <div class="section-name contact__section-name">
+                <h2 class="section-name__header">
                     Some of <b>our works</b>
-                </h1>
+                </h2>
                 <div class="line"></div>
             </div>
-            <p class="section-describer"><i>
-                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
-            </i></p>
-            <form id="contact-form" onsubmit="return processForm('contact-form')">
-                <div class="user-data-wrapper">
-                    <p class="user-data">
-                        <label for="name">
-                            Name
-                            <input id="name" class="input-data" type="text" required/> 
-                        </label>    
-                    </p>  
-                    <p class="user-data">
-                        <label for="name">
-                            Email addres
-                            <input id="email" class="input-data" type="email" required/> 
-                        </label>   
-                    </p>
+            <p class="section-describer contact__section-describer">
+                Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+                of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                popular during the Renaissance.
+            </p>
+            <form class="form contact-form">
+                <div class="helper-input-wrapper">
+                    <div class="contact-form__input-wrapper">
+                        <label class="form__label" for="name">Name</label>
+                        <input class="form__input-text" type="text" id="name" required />
+                    </div>
+                    <div class="contact-form__input-wrapper">
+                        <label class="form__label" for="name">Email addres</label>
+                        <input class="form__input-text" type="email" id="email" required />
+                    </div>
                 </div>
-                <p class="message">
-                    <label for="message">Message</label>
-                    <textarea class="input-data" id="message" rows="9" required></textarea>
-                </p>
-                <button id="myBtn" class="submit">Send</button>
+                <div class="helper-textarea">
+                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__input-textarea" id="message" required></textarea>
+                </div>
+                <button class="contact-form__submit form__submit" id="myBtn">Send</button>
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <span class="footer-sign">All rights reserver. Copyright &copy; 2014 <b>sprit8</b></span>
-            <ul>
-                <li>
+    <footer class="footer">
+        <div class="container footer__сontainer">
+            <span class="footer__sign">All rights reserver. Copyright &copy; 2014 <b>sprit8</b></span>
+            <ul class="footer__list">
+                <li class="footer__list-item">
                     <a href="https://ru.linkedin.com"><img src="img/icon/linked.png"></a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="https://www.google.com/"><img src="img/icon/google.png"></a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="https://www.facebook.com/"><img src="img/icon/facebook.png"></a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="https://twitter.com"><img src="img/icon/twitter.png"></a>
                 </li>
-                <li>
+                <li class="footer__list-item">
                     <a href="https://en.wikipedia.org/wiki/Ball"><img src="img/icon/ball.png"></a>
                 </li>
             </ul>
         </div>
     </footer>
 
-    <div id="modal-block" class="modal">
+    
+
+    <div class="modal">
+        <div class="modal-content">
+        </div>
     </div>
-      
-    <div class="overlay" id="overlay"></div>
     <script src="lib/jquery/jquery-3.4.1.min.js"></script>
     <script src="lib/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

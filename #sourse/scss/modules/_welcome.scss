@@ -1,0 +1,30 @@
+@import "vars.scss";
+
+.welcome {
+  background-color: black;
+  .welcome_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    min-height: 500px;
+    h1 {
+      color: $color-grey;
+      margin-bottom: 20px;
+    }
+    p {
+      color: $color-grey;
+    }
+    .scroll-btn {
+      position: absolute;
+      bottom: 90px;
+      left: calc(50% - 25px);
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

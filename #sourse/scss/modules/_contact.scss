@@ -1,0 +1,38 @@
+.contact {
+    &__container {
+      max-width: 750px;
+    }
+    &__section-name {
+      margin-bottom: 60px;
+    }
+    &__section-describer {
+      margin-bottom: 90px;
+    }
+    &-form {
+      .helper-input-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .helper-textarea {
+        width: 100%;
+      }
+      &__input-wrapper {
+        width: 48%;
+      }
+      &__input-text {
+        width: 100%;
+      }
+      &__submit {
+        display: block;
+        margin-left: auto;
+      }
+    }
+    @media (max-width: 767px) {
+      &__section-name {
+        margin-bottom: 30px;
+      }
+      &__section-describer {
+        margin-bottom: 20px;
+      }
+    }
+  }

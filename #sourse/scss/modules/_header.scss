@@ -1,0 +1,113 @@
+@import "vars.scss";
+
+.header {
+  background-color: black;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  &__menu-btn {
+    display: none;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    ul {
+      display: flex;
+      li {
+        @include underline-hover;
+        margin-left: 20px;
+        a {
+          text-transform: uppercase;
+          color: white;
+          transition: 0.3s;
+          &:hover {
+            color: $color-grey;
+          }
+        }
+      }
+    }
+  }
+  &__logo {
+    color: white;
+    font-size: 24px;
+    z-index: 3;
+  }
+  @media (max-width: 767px) {
+    &__menu-btn {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3;
+      .draw-btn-helper {
+        transition: 0.3s;
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+      }
+      &:after,
+      &:before {
+        transition: 0.3s;
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+      }
+      &:before {
+        top: 0;
+      }
+      &:after {
+        bottom: 0;
+      }
+    }
+    .header__menu {
+      display: block;
+      position: fixed;
+      top: -100%;
+      transition: all 0.3s ease-in-out;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      padding: 60px 0 0 0;
+      background-color: black;
+      z-index: 2;
+      box-shadow: 0 0 20px 20px;
+      ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+          margin: 0 0 15px 0;
+        }
+      }
+      &.active {
+        top: 0;
+      }
+    }
+    .header__menu-btn.active {
+      transition: 0.3s;
+      &:before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+      span {
+        transform: scale(0);
+      }
+    }
+  }
+}

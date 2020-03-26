@@ -1,0 +1,99 @@
+@import "vars.scss";
+
+.about-us {
+  &__container {
+    display: flex;
+  }
+  &__img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0 20px;
+  }
+  &__img {
+    width: 100%;
+    max-width: 500px;
+  }
+  &__content {
+    flex-basis: 430px;
+    flex-shrink: 0;
+  }
+  &__legend {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__header {
+    text-align: start;
+    &:after {
+      display: block;
+      content: "";
+      width: 100px;
+      height: 3px;
+      background-color: $color-gold;
+      margin: 20px 0 30px;
+    }
+  }
+  &__list {
+    margin: 50px 0;
+  }
+  &__list-item {
+    list-style-image: url(../../img/icon/list-style.png);
+    list-style-position: inside;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-grey-dark;
+  }
+  &__btn {
+    padding: 15px 25px;
+    border: 1px solid $color-grey-dark;
+    color: $color-grey-dark;
+    border-radius: 2px;
+    transition: 0.3s;
+    &:hover {
+      border-radius: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    &__container {
+      padding: 50px 20px;
+    }
+    &__img-container {
+      display: none;
+    }
+    &__content {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__header {
+      text-align: center;
+      &:after {
+        margin: 20px auto;
+      }
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__list {
+      text-align: start;
+      margin: 20px 0;
+    }
+    &__list-item {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__legend {
+      font-size: 14px;
+    }
+    &__btn {
+      display: inline-block;
+    }
+  }
+}
