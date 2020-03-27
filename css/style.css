@@ -311,7 +311,7 @@ h5 {
 .welcome {
   background-color: black;
 }
-.welcome .welcome_container {
+.welcome__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,20 +320,20 @@ h5 {
   height: 100vh;
   min-height: 500px;
 }
-.welcome .welcome_container h1 {
+.welcome__greeting {
   color: #999999;
   margin-bottom: 20px;
 }
-.welcome .welcome_container p {
+.welcome__about-company {
   color: #999999;
 }
-.welcome .welcome_container .scroll-btn {
+.welcome__scroll-btn {
   position: absolute;
   bottom: 90px;
   left: calc(50% - 25px);
   transition: 0.3s;
 }
-.welcome .welcome_container .scroll-btn:hover {
+.welcome__scroll-btn:hover {
   transform: scale(1.1);
 }
 
