@@ -44,7 +44,9 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    headerListVisibilityHandler()
+    if (!e.target.classList.contains('scroll-btn')){
+      headerListVisibilityHandler();
+    }
     const blockID = anchor.getAttribute('href').substr(1);
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
@@ -74,12 +76,12 @@ function filterHandler(e) {
 }
 
 function worksHandler(e) {
-  let curModal = new Modal(modal); 
+  let curModal = new Modal(modal);
   curModal.clean();
-  curModal.generateCost()
+  curModal.generateCost();
   curModal.open();
-  curModal.close();
 }
+
 filterByCategory('all');
 
 function filterByCategory(category) {
@@ -121,7 +123,6 @@ function contactFormHandler(e) {
   curModal.clean();
   curModal.create(inputs);
   curModal.open();
-  curModal.close();
 }
 function getInputs(form) {
   return Array.from(form.querySelectorAll('input, textarea'));
@@ -129,6 +130,7 @@ function getInputs(form) {
 class Modal {
   constructor(element) {
     this.element = element;
+    this._handler = null;
   }
   create(inputs) {
     for (let input of inputs) {
@@ -139,16 +141,14 @@ class Modal {
   }
   open() {
     this.element.style.display = 'flex';
-    //document.body.style.overflowY = "hidden";
+    setTimeout(()=>{
+      window.addEventListener('click', this._handler = e => this.close(e));
+    },1);  //уточнить как переписать, костыль
   }
-  close() {
-    window.addEventListener('click', closeCurModal);
-    function closeCurModal(e) {
-      if (e.target == modal) {
-        modal.style.display = 'none';
-        this.removeEventListener('click', closeCurModal);
-        //document.body.style.overflowY = "visible";
-      }
+  close(e) {
+    if (e.target.closest(".modal-content") === null) {
+      window.removeEventListener('click', this._handler);
+      this.element.style.display = "none";
     }
   }
   generateCost() {

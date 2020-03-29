@@ -329,6 +329,7 @@ h5 {
 }
 .welcome__scroll-btn {
   position: absolute;
+  fill: #6c6c6c;
   bottom: 90px;
   left: calc(50% - 25px);
   transition: 0.3s;
@@ -394,6 +395,12 @@ h5 {
 }
 .about-us__btn:hover {
   border-radius: 10px;
+}
+.about-us__btn .btn__img {
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+  fill: #6c6c6c;
 }
 @media (max-width: 767px) {
   .about-us__container {
