@@ -672,7 +672,7 @@ h5 {
   }
   .works__filter {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
   }
   .works__filter-type {
@@ -681,6 +681,7 @@ h5 {
   }
   .works__filter-type:nth-child(n) {
     border: none;
+    padding: 0;
   }
   .works__item {
     width: 130px;

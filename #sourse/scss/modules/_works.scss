@@ -120,14 +120,16 @@
     }
     &__filter {
       width: 100%;
-      justify-content: space-between;
+      justify-content: center;//1
       text-align: center;
     }
     &__filter-type {
       width: 50%;
       margin-bottom: 10px;
+
       &:nth-child(n) {
         border: none;
+        padding:0;
       }
     }
     &__item {
