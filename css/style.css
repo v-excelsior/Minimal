@@ -503,17 +503,17 @@ h5 {
   .works__items .item-2,
   .works__items .item-3,
   .works__items .item-4 {
-    background: center/contain url(../../img/item/work-1.png), rgba(0, 0, 0, 0.59); }
+    background: center/contain url(img/item/work-1.png), rgba(0, 0, 0, 0.59); }
   .works__items .item-5,
   .works__items .item-6,
   .works__items .item-7,
   .works__items .item-8 {
-    background: center/contain url(../../../img/item/work-2.png) rgba(0, 0, 0, 0.59); }
+    background: center/contain url(img/item/work-2.png) rgba(0, 0, 0, 0.59); }
   .works__items .item-9,
   .works__items .item-10,
   .works__items .item-11,
   .works__items .item-12 {
-    background: center/contain url(/img/item/work-3.png) rgba(0, 0, 0, 0.59); }
+    background: center/contain url(img/item/work-3.png) rgba(0, 0, 0, 0.59); }
   .works__items .show {
     display: flex; }
 
