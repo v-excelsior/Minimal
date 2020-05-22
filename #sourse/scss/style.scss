@@ -100,4 +100,7 @@
   width: 25px;
   height: 25px;
   fill: white;
+  &:hover{
+      fill:darken(white, 50%)
+  }
 }
