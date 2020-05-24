@@ -53,6 +53,10 @@
     font-weight: 600;
     padding: 10px 65px;
     background-color: $color-gold;
+    transition: 0.2s;
+    &:hover{
+        background-color:darken($color-gold, $amount: 11%) ;
+    }
   }
   @media (max-width: 767px) {
     &__label {
@@ -102,6 +106,6 @@
   height: 25px;
   fill: white;
   &:hover{
-      fill:darken(white, 49%)
+      fill:darken(white, 50%)
   }
 }

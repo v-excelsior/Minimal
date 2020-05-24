@@ -703,7 +703,10 @@ h5 {
   color: white;
   font-weight: 600;
   padding: 10px 65px;
-  background-color: #fcac45; }
+  background-color: #fcac45;
+  transition: 0.2s; }
+  .form__submit:hover {
+    background-color: #fb930e; }
 
 @media (max-width: 767px) {
   .form__label {
@@ -744,4 +747,4 @@ h5 {
   height: 25px;
   fill: white; }
   .svg-icon:hover {
-    fill: #828282; }
+    fill: gray; }
